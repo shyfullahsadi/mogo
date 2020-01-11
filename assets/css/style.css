@@ -1,40 +1,140 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-ul,ol{
+ul,
+ol {
     list-style-type: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
 }
 
-img{
+img {
     vertical-align: middle;
 }
 
 /* =========================== Navbar Part css ========================== */
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
 
+.navbar-nav .nav-item {
+    padding-left: 20px;
+}
 
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    position: relative;
+    transition: all linear 0.3s;
+}
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fce38a;
+}
 
+.navbar-light .navbar-nav .nav-link::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fce38a;
+    transition: all linear 0.3s;
+}
 
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
 
+.navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
 
+/* ========================= Banner Part css ======================= */
 
+#banner{
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 230px;
+    padding-bottom: 245px;
+    position: relative;
+}
 
+#banner::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(243, 129, 129,0.9), rgb(252, 227, 138,0.9));
+}
 
+.banner-text{
+    position: relative;
+    z-index: 999;
+}
 
+.banner-text::after{
+    position: absolute;
+    content: '';
+    bottom: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #ffffff;
+}
 
+.banner-text h2{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 72px;
+    font-weight: 400;
+    color: #ffffff;
+}
 
+.banner-text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150px;
+    font-weight: 700;
+    padding: 0 90px;
+    color: #ffffff;
+    padding-bottom: 90px;
+}
+
+.banner-text a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 15px;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    transition: all linear 0.3s;
+}
+
+.banner-text a:hover{
+    color: #ffffff;
+    background: #fce38a;
+}
 
 
 
